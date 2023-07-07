@@ -1,5 +1,5 @@
 export const fetchSpecificUser = (name) => {
-  return fetch(`http://192.168.29.231:9000/api/getdata`, {
+  return fetch(`https://deadtoonshdwebsite.vercel.app/api/getdata`, {
     method: "GET",
     headers: {
       Accept: "applicaion/json",

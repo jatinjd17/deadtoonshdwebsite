@@ -34,7 +34,9 @@ function Rows() {
 
   useEffect(() => {
     async function fetchData() {
-      const request = await axios.get("http://192.168.29.231:9000/api/getdata");
+      const request = await axios.get(
+        "https://deadtoonshdwebsite.vercel.app/api/getdata"
+      );
       // console.log(request.data.results);
       setMovies(request);
       // console.log(request);

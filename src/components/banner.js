@@ -28,7 +28,9 @@ function Banner() {
   const [currentSlide, setCurrentSlide] = useState(1);
   useState(() => {
     async function fetchData() {
-      const request = await axios.get("http://192.168.29.231:9000/api/getdata");
+      const request = await axios.get(
+        "https://deadtoonshdwebsite.vercel.app/api/getdata"
+      );
       // console.log(request.data.results);
       setMovies(request.data.slice(0, 4));
       // console.log(request);
